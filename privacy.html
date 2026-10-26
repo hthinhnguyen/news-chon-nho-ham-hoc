@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css"><title>Privacy Policy – Tin60 Publisher</title></head><body>
+<header><div class="wrap"><nav><a class="brand" href="index.html">Tin60 Publisher</a><a href="index.html" class="NAV_HOME">Home</a><a href="privacy.html" class="on">Privacy Policy</a><a href="terms.html" class="NAV_TERMS">Terms of Service</a></nav></div></header>
+<main><div class="wrap">
+<h1>Privacy Policy</h1>
+<p class="lead">Effective date: 24 October 2026 · Applies to the Tin60 Publisher tool ("the tool") operated by Nguyễn Hữu Thịnh.</p>
+<p><span class="yt"><svg width="28" height="20" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>Uses YouTube API Services</span></p>
+<h2>1. YouTube API Services</h2>
+<p>The tool uses YouTube API Services to upload videos to, and read the status of videos on, the YouTube channel of the person who signs in.
+By using the tool you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+Google's handling of your data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<h2>2. Who uses the tool</h2>
+<p>The tool is used only by its owner, Nguyễn Hữu Thịnh, to manage the owner's own channel. It is not available to the public.
+You must agree to this Privacy Policy before using any feature of the tool.</p>
+<h2>3. Information the tool accesses, collects, stores and uses</h2>
+<table>
+<tr><th>Information</th><th>Why</th><th>Where it is kept / how long</th></tr>
+<tr><td>OAuth 2.0 access and refresh tokens for the signed-in Google account (scope <code>https://www.googleapis.com/auth/youtube</code>)</td><td>To upload videos, check their status and delete the tool's own uploads on request</td><td>A file on the owner's computer readable only by the owner, until access is revoked</td></tr>
+<tr><td>Channel ID and title (<code>channels.list</code>)</td><td>To confirm the correct channel is connected</td><td>Not stored; used only during the request</td></tr>
+<tr><td>ID of each video the tool uploads (returned by <code>videos.insert</code>), upload time and a deleted flag</td><td>To record which articles have been published and to delete the tool's own videos on request</td><td>Local database on the owner's computer. Each stored ID is re-checked with YouTube (<code>videos.list</code>) at least every 30 days; if the video no longer exists it is flagged as deleted. All IDs are erased when access is revoked</td></tr>
+<tr><td>IDs, titles and privacy/upload status of the channel's recent videos (<code>videos.list</code>, <code>playlistItems.list</code>)</td><td>To know whether a video has been made public by the owner</td><td>Used during the daily check; only the ID of the matching video is kept, under the same 30-day refresh rule</td></tr>
+<tr><td>Videos, titles and descriptions created by the tool</td><td>To upload them to the channel</td><td>Local files on the owner's computer, deleted after 14 days</td></tr>
+</table>
+<p>The tool does not collect names, email addresses, comments, subscriber data, analytics or any information about other YouTube users or viewers.</p>
+<h2>4. How information is used, processed and shared</h2>
+<p>Information is used only for the purposes listed above. It is processed on the owner's computer and sent only to Google/YouTube through the YouTube Data API.
+It is not sold, rented or shared with any other internal or external party, and it is not used for advertising.</p>
+<h2>5. Third-party content and advertising</h2>
+<p>The tool does not show advertising and does not let third parties serve content or ads through it. (Ads shown by YouTube on the published videos are governed by YouTube.)</p>
+<h2>6. Cookies and device storage</h2>
+<p>The tool does not use cookies. It stores the OAuth token file and the local database described above on the owner's own device. This website does not use cookies or analytics.</p>
+<h2>7. Revoking access and deleting data</h2>
+<p>You can revoke the tool's access to your Google account at any time via the
+<a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.
+The tool also provides a disconnect command (<code>youtube_auth.py --revoke</code>) that revokes the token with Google immediately and deletes the stored token and all stored YouTube API data.
+After revocation through Google's page, the tool can no longer refresh stored YouTube data, and it is deleted within 30 days. Deletion requests are completed within 7 days.</p>
+<h2>8. Changes</h2>
+<p>Changes to this policy are published on this page with a new effective date.</p>
+<h2>9. Contact</h2>
+<p>Questions or complaints about privacy: Nguyễn Hữu Thịnh, <a href="mailto:nguyen.hthinh.qn@gmail.com">nguyen.hthinh.qn@gmail.com</a>, Da Nang, Vietnam.</p>
+</div></main>
+<footer><div class="wrap">© 2026 Nguyễn Hữu Thịnh · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a> · Contact: <a href="mailto:nguyen.hthinh.qn@gmail.com">nguyen.hthinh.qn@gmail.com</a></div></footer></body></html>
